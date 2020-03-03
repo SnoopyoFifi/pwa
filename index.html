@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <h1 class="title">hello word2</h1>
+    <p>Cache First</p>
+    <h3 id="cacheFirst"></h3>
+    <p>Network Only</p>
+    <h3 id="networkOnly"></h3>
+    <script src="./axios.min.js"></script>
+    <script src="./app.js"></script>
+    <button onclick="cacheFirst()">cacheFirst</button>
+    <button onclick="networkOnly()">networkOnly</button>
+    <button onclick="unregister()">unregister</button>
+
+    <h1>notification</h1>
+    <button onclick="notifyMe('信息', '这是一条消息')">Notify me!</button>
+
+    <h1>postMessage</h1>
+    <button onclick="postMessage({ msg: '我是页面' })">post message</button>
+
+</body>
+</html>
